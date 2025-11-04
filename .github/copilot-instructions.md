@@ -12,6 +12,7 @@ Primary goals for AI contributors
 - Keep changes minimal and local: modify `index.html`, `style.css`, and add assets in `assets/`.
 - Use semantic HTML and small, self-contained CSS classes (no global resets unless added to `style.css`).
 - Preserve existing file names and relative paths.
+- Any id attributes should be meaningful and written in kebab case.
 
 Project-specific patterns and examples
 - Single-page structure: add new sections inside `<body>` of `index.html`. Example pattern:
