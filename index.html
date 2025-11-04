@@ -11,21 +11,26 @@
         <main>
             <nav>
                 <ul>
-                    <li>Welcome</li>
-                    <li>Work Experience</li>
-                    <li>Projects</li>
-                    <li>Personal Background</li>
-                    <li>Contact Me</li>
+                    <a href="#section-home"><li>Welcome</li></a>
+                    <a href="#section-work-experience"
+                        ><li>Work Experience</li></a
+                    >
+                    <a href="#section-projects"><li>Projects</li></a>
+                    <a href="#section-about-me"><li>Personal Background</li></a>
+                    <a href="#section-contact-me"><li>Contact Me</li></a>
                 </ul>
+                <a href="assets/cv-deni-dwi-arta.pdf"
+                    ><button>Download My CV</button></a
+                >
             </nav>
 
-            <section id="hero-section">
+            <section id="section-home">
                 <h3 id="about-me-title">About Me</h3>
                 <p id="about-me-description">
                     I build beautiful interfaces that turn raw ideas into
                     products people love. At Pallet I rewrote the hiring
                     narrative and tripled inbound leads, showing me how copy,
-                    UX, and growth fuse together. Today at Autopilot I’m shaping
+                    UX, and growth fuse together. Today at Autopilot I`m shaping
                     next-gen investing tools that let anyone trade like a pro,
                     translating complex finance into clear, confident flows. My
                     work has been featured by Bestfolios, Minimal Gallery, and
@@ -34,26 +39,85 @@
                 </p>
             </section>
 
-            <section id="work-expereince">
+            <section id="section-work-experience">
                 <h2 id="work-expereince-title">Work Experience</h2>
-                <p></p>
+                <ul class="work-experience-stack">
+                    <li class="work-experience-item">
+                        <div id="mockup">s</div>
+                        <div class="li-body">
+                            <p class="company-name">SHAFIQ</p>
+                            <p class="job-position">Product Owner</p>
+                        </div>
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+                    <li class="work-experience-item">
+                        <div id="mockup">s</div>
+                        <div class="li-body">
+                            <p class="company-name">Fanattics Technology</p>
+                            <p class="job-position">Product Designer</p>
+                        </div>
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+                    <li class="work-experience-item">
+                        <div id="mockup">s</div>
+                        <div class="li-body">
+                            <p class="company-name">Purwadhika</p>
+                            <p class="job-position">UI/UX Design Instructor</p>
+                        </div>
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+                    <li class="work-experience-item">
+                        <div id="mockup">s</div>
+                        <div class="li-body">
+                            <p class="company-name">Transcosmos Inc.</p>
+                            <p class="job-position">Design Ops</p>
+                        </div>
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+                </ul>
             </section>
 
-            <section id="projects">
+            <section id="section-projects">
                 <h2>Projects</h2>
+                <div class="container"></div>
             </section>
 
-            <section id="personal-background">
+            <section id="section-about-me">
                 <h2>Personal Info</h2>
-                <h2>Educational Information</h2>
+                <h3>Educational Background</h3>
             </section>
 
-            <section id="contact-me">
-                <div id="form-container"></div>
+            <section id="section-contact-me">
+                <div id="form-container">
+                    <form id="contact-form">
+                        <h2>Contact Me</h2>
+                        <label for="name">Name:</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required /><br /><br />
+                        <label for="email">Email:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required /><br /><br />
+                        <label for="message">Message:</label><br />
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            cols="50"
+                            required></textarea
+                        ><br /><br />
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
-            <p>Deni DWi Arta</p>
+            <p>Deni Dwi Arta</p>
         </footer>
     </body>
 </html>
