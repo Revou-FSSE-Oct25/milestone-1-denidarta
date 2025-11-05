@@ -4,11 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Software Developer Portfolio</title>
-
-        <!-- Styles -->
         <link rel="stylesheet" href="css/style.css" />
-
-        <!-- Font preconnects and import -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -38,7 +34,6 @@
         </nav>
 
         <main id="main-content">
-            <!-- HOME -->
             <section id="section-home">
                 <div id="social-block"></div>
 
@@ -68,7 +63,7 @@
                 </p>
                 <div id="skillset-block"></div>
             </section>
-            <!-- WORK EXPERIENCE -->
+
             <section id="section-work-experience">
                 <h2 id="work-expereince-title">Work Experience</h2>
                 <ul class="work-experience-stack">
@@ -145,7 +140,7 @@
                     </li>
                 </ul>
             </section>
-            <!-- PROJECTS -->
+
             <section id="section-projects">
                 <h2>Projects</h2>
                 <p>Here are some projects I have worked on:</p>
@@ -155,6 +150,7 @@
                         <img
                             src="./assets/images/project cover.png"
                             alt="Project Thumbnail" />
+                        <figcaption>Pale Blue Dot Project</figcaption>
                     </figure>
 
                     <h3>Pale Blue Dot UI Kit</h3>
@@ -171,13 +167,57 @@
                 </div>
             </section>
 
-            <!-- ABOUT -->
             <section id="section-about-me">
                 <h2>Personal Info</h2>
-                <h3>Educational Background</h3>
+                <div id="about-me-content">
+                    <div>
+                        <figure style="margin: 0">
+                            <img
+                                id="my-photo"
+                                src="./assets/images/my-photo.jpg"
+                                alt="Deni's Portrait" />
+                        </figure>
+                    </div>
+                    <div>
+                        <p id="about me">
+                            Hey, I’m Deni — a product owner turned aspiring
+                            software developer based in Jakarta. After years
+                            shaping tech products in the fintech and agritech
+                            space, from securities crowdfunding at SHAFIQ to
+                            supply chain platforms like Empofarm, I’m now
+                            channeling that strategic mindset into building
+                            things with code. I love designing systems that make
+                            life simpler and more secure for users, whether it’s
+                            crafting intuitive dashboards or architecting
+                            seamless financial flows. When I’m not translating
+                            business needs into product specs, you’ll probably
+                            find me tinkering with React, leveling up my UI
+                            skills, or exploring how tech can empower the
+                            underbanked. I’m driven by clarity, guided by
+                            curiosity, and always up for a challenge that blends
+                            design, logic, and impact.
+                        </p>
+                        <h3>Educational Background</h3>
+                        <div id="container-edu">
+                            <figure>
+                                <img
+                                    class="edu-logo"
+                                    src="./assets/logos/universitas-indonesia-logo.png"
+                                    alt="Logo Universitas Indonesia" />
+                                <figcaption class="hidden-element">
+                                    Universitas Indonesia Logo
+                                </figcaption>
+                            </figure>
+                            <hgroup>
+                                <h4>Bachelor of Arts in English Literature</h4>
+                                <p>Universitas Indonesia</p>
+                                <p>2014 - 2019</p>
+                            </hgroup>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <!-- CONTACT -->
             <section id="section-contact-me">
                 <div id="form-container">
                     <form
@@ -215,7 +255,7 @@
                             <textarea
                                 id="message"
                                 name="message"
-                                placeholder="How Can I Help You?"
+                                placeholder="Put your message here..."
                                 rows="4"
                                 cols="50"
                                 maxlength="400"
