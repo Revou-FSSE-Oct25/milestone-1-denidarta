@@ -2,7 +2,7 @@
 
 ## About The Project
 
-This project is a personal portfolio website for Deni Dwi Arta, a software developer. It showcases his work experience, projects, and contact information. The website is designed to be a single-page application with smooth scrolling to different sections.
+This project is a personal portfolio website of a software developer. It showcases my work experience, projects, and contact information. The website is designed to be a single-page application with smooth scrolling to different sections.
 
 ## Link to the live demo
 
@@ -12,11 +12,11 @@ You can view the live demo of the project here: [https://denidarta.github.io/mil
 
 The website has the following features:
 
--   **Welcome:** A hero section with a brief introduction about Deni Dwi Arta.
--   **Work Experience:** A list of companies Deni has worked for, along with his job titles.
--   **Projects:** A showcase of Deni's projects with links to view them.
--   **Personal Background:** Information about Deni's educational background and a short bio.
--   **Contact Me:** A form to send a message to Deni.
+-   **Welcome:** A hero section with a brief introduction about me.
+-   **Work Experience:** A list of companies have worked for, along with my job titles.
+-   **Projects:** A showcase of my projects with links to view them.
+-   **Personal Background:** Information about my educational background and a short bio.
+-   **Contact Me:** A form to send me a message.
 
 ## Folder Structure
 
