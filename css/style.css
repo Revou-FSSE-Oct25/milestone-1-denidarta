@@ -192,7 +192,7 @@ nav {
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-        url("assets/images/hero-image-background.jpg");
+        url("./../assets/images/hero-image-background.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
