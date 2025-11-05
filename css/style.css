@@ -380,3 +380,10 @@ select:focus {
     align-items: center;
     margin-top: 80px;
 }
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
