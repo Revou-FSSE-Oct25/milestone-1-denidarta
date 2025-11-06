@@ -1,4 +1,4 @@
-# Software Developer Portfolio
+# Software Developer Portfolio - Module 1 Assignment
 
 ## About The Project
 
@@ -6,7 +6,7 @@ This project is a personal portfolio website of a software developer. It showcas
 
 ## Link to the live demo
 
-You can view the live demo of the project here: [https://denidarta.github.io/milestone-1-denidarta/](https://denidarta.github.io/milestone-1-denidarta/)
+You can view the live demo of the project [here](https://revou-fsse-oct25.github.io/milestone-1-denidarta/)
 
 ## Project Features
 
