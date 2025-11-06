@@ -13,6 +13,7 @@
 section {
     width: 100%;
     max-width: 800px;
+    scroll-margin-top: var(--nav-height);
 }
 
 body {
@@ -220,11 +221,15 @@ nav {
     background-color: var(--background-color);
     color: var(--text-primary-color);
     padding: 8px 16px;
-    font-size: 1.125rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 600;
     font-family: var(--font-family);
     border-radius: 99px;
     text-decoration: none;
+}
+#download-cv-button:hover,
+#download-cv-button:focus {
+    background-color: var(--primary-color);
 }
 
 a:focus,
@@ -314,6 +319,7 @@ select:focus {
     display: flex;
     flex-direction: row;
     width: 100%;
+    gap: 16px;
 }
 
 #form-container {
@@ -386,4 +392,27 @@ footer {
     align-items: center;
     justify-content: center;
     height: 80px;
+}
+
+.form-field {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.form-label {
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.white-text {
+    color: white !important;
+}
+
+#message {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    padding: 8px;
+    resize: none;
 }

@@ -227,31 +227,47 @@
                         role="form"
                         aria-label="Contact form">
                         <fieldset>
-                            <legend><h2>Leave Me A Message</h2></legend>
+                            <legend>
+                                <h2 class="white-text">Leave Me A Message</h2>
+                            </legend>
                             <div id="form-header">
                                 <div id="form-name">
-                                    <label for="name">Name:</label>
+                                    <label
+                                        for="name"
+                                        class="form-label white-text"
+                                        >Name:</label
+                                    >
                                     <input
+                                        class="form-field"
+                                        aria-label="Your Name"
                                         type="text"
                                         id="name"
                                         name="name"
-                                        placeholder="Whom Am I Talking With?"
+                                        placeholder="Put your name here..."
                                         required />
                                 </div>
 
                                 <div id="form-email">
-                                    <label for="email">Email:</label>
+                                    <label
+                                        for="email"
+                                        class="form-label white-text"
+                                        >Email:</label
+                                    >
                                     <input
+                                        class="form-field"
+                                        aria-label="Your Email"
                                         type="email"
                                         id="email"
                                         name="email"
-                                        placeholder="How Can I Reach You?"
+                                        placeholder="Put your email here..."
                                         required />
                                 </div>
                             </div>
                         </fieldset>
                         <div id="form-message">
-                            <label for="message">Message:</label>
+                            <label for="message" class="form-label white-text"
+                                >Message:</label
+                            >
                             <textarea
                                 id="message"
                                 name="message"
