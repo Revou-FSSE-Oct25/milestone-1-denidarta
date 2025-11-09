@@ -34,7 +34,7 @@
         </nav>
 
         <main id="main-content">
-            <section id="section-home">
+            <section id="section-home" aria-labelledby="hero-title">
                 <div id="social-block"></div>
 
                 <div id="hero-block">
@@ -43,8 +43,7 @@
                     </h1>
 
                     <h4
-                        id="hero-subtitle"
-                        style="font-size: 23px; font-weight: 600">
+                        id="hero-subtitle">
                         Building What I Once Only Designed
                     </h4>
                 </div>
@@ -64,7 +63,7 @@
                 <div id="skillset-block"></div>
             </section>
 
-            <section id="section-work-experience">
+            <section id="section-work-experience" aria-labelledby="work-expereince-title">
                 <h2 id="work-expereince-title">Work Experience</h2>
                 <ul class="work-experience-stack">
                     <li class="work-experience-item">
@@ -141,15 +140,15 @@
                 </ul>
             </section>
 
-            <section id="section-projects">
-                <h2>Projects</h2>
+            <section id="section-projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Projects</h2>
                 <p>Here are some projects I have worked on:</p>
 
                 <div class="project-card">
                     <figure id="project-thumbnail">
                         <img
                             src="./assets/images/project cover.png"
-                            alt="Project Thumbnail" />
+                            alt="Project Thumbnail" loading="lazy" decoding="async" />
                         <figcaption>Pale Blue Dot Project</figcaption>
                     </figure>
 
@@ -161,21 +160,24 @@
 
                     <a
                         href="https://62aad36e2d62f857d675c503-eyadiccjag.chromatic.com/"
-                        target="_blank">
-                        <button>Visit Project</button>
-                    </a>
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button btn-primary"
+                        role="button"
+                        aria-label="Open Pale Blue Dot UI Kit in a new tab"
+                    >Visit Project</a>
                 </div>
             </section>
 
-            <section id="section-about-me">
-                <h2>Personal Info</h2>
+            <section id="section-about-me" aria-labelledby="about-me-heading">
+                <h2 id="about-me-heading">Personal Info</h2>
                 <div id="about-me-content">
                     <div>
-                        <figure style="margin: 0">
+                        <figure class="m-0">
                             <img
                                 id="my-photo"
                                 src="./assets/images/my-photo.jpg"
-                                alt="Deni's Portrait" />
+                                alt="Deni's Portrait" loading="lazy" decoding="async" width="400" height="400" />
                         </figure>
                     </div>
                     <div>
@@ -218,7 +220,7 @@
                 </div>
             </section>
 
-            <section id="section-contact-me">
+            <section id="section-contact-me" aria-labelledby="contact-heading">
                 <div id="form-container">
                     <form
                         id="contact-form"
@@ -228,7 +230,7 @@
                         aria-label="Contact form">
                         <fieldset>
                             <legend>
-                                <h2 class="white-text">Leave Me A Message</h2>
+                                <h2 id="contact-heading" class="white-text">Leave Me A Message</h2>
                             </legend>
                             <div id="form-header">
                                 <div id="form-name">
@@ -243,6 +245,7 @@
                                         type="text"
                                         id="name"
                                         name="name"
+                                        autocomplete="name"
                                         placeholder="Put your name here..."
                                         required />
                                 </div>
@@ -259,6 +262,7 @@
                                         type="email"
                                         id="email"
                                         name="email"
+                                        autocomplete="email"
                                         placeholder="Put your email here..."
                                         required />
                                 </div>
@@ -268,6 +272,7 @@
                             <label for="message" class="form-label white-text"
                                 >Message:</label
                             >
+                            <p id="message-help" class="hidden-element">Maximum 400 characters.</p>
                             <textarea
                                 id="message"
                                 name="message"
@@ -276,24 +281,23 @@
                                 cols="50"
                                 maxlength="400"
                                 aria-label="Your Message"
+                                aria-describedby="message-help"
                                 required></textarea>
                         </div>
                         <input
-                            class="button btn-primary"
+                            class="button btn-primary mt-16"
                             aria-label="submit form"
-                            style="margin-top: 16px"
                             type="submit"
                             value="Submit" />
                         <input
-                            class="button"
-                            style="margin-top: 16px"
+                            class="button mt-16"
                             type="reset"
                             value="Clear" />
                     </form>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <p>Deni Dwi Arta</p>
         </footer>
     </body>
