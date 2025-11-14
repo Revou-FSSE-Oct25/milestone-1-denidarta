@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+    --font-1: 10px;
+    --font-2: 12px;
+    --font-3: 16px;
+    --font-4: 20px;
+    --font-5: 24px;
+    --font-6: 32px;
+    --font-7: 40px;
+    --font-8: 48px;
+    --font-9: 62px;
+
+    --display-font: "Plus Jakarta Sans", sans-serif;
+    --body-font: "Inter", sans-serif;
+    --default-line-height: 1.25;
+
+    --bg-primary: #0d0d0d;
+
+    --bg-container: #1e1e28;
+    --bg-container-2: #12121c;
+
+    --text-primary: #fff;
+    --text-secondary: #ccc;
+    --text-brand: #a4fdbf;
+    --text-brand-alt: #d2d4ff;
+}
+
+.gradient {
+    background: var(
+        --Gradient-1,
+        linear-gradient(
+            90deg,
+            var(--text-brand, #a4fdbf) 0%,
+            var(--text-brand-alt, #d2d4ff) 100%
+        )
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-secondary {
+    color: var(--text-secondary);
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+h1 {
+    font-family: var(--display-font);
+    font-size: var(--font-9);
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    margin: 0px;
+}
+.section-title {
+    font-family: var(--display-font);
+    font-size: var(--font-6);
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 0px;
+}
+h4 {
+    font-family: var(--display-font);
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+}
+h5 {
+    font-family: var(--display-font);
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+.body-bold {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+.text-body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+}
+.subtitle {
+    font-family: var(--body-font);
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+}
