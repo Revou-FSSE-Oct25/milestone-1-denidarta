@@ -203,7 +203,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    align-self: stretch;
 
     margin: 0px;
     padding: 16px;
@@ -291,12 +290,30 @@ footer {
     gap: 4px;
 }
 
+.feature-article:hover {
+    border-color: var(
+        --Gradient-1,
+        linear-gradient(
+            90deg,
+            var(--text-brand, #a4fdbf) 0%,
+            var(--text-brand-alt, #d2d4ff) 100%
+        )
+    );
+}
+
 @media screen and (min-width: 768px) {
+    footer {
+        align-items: center;
+    }
+
     .footer-container {
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 24px;
+        flex-grow: 1;
+        width: 100%;
+        padding: 24px 0px;
     }
 
     .blog-info {
