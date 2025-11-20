@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+:root {
+    --page-background: #101010;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --tint-2: #93F4D8;
+}
+
+body {
+    font-family: 'Stack Sans Text', sans-serif;
+    background-color: var(--page-background);
+    color: var(--text-primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.tint-2 {
+    color: var(--tint-2);
+}
+
+.display-text {
+    font-family: 'Permanent Marker', cursive;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 32px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    gap: 9px;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.footer-menu ul li {
+    font-family: 'Stack Sans Text', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--text-primary);
+
+}
+
+.social-link-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px;
+    gap: 16px;
+}
+
+.social-link {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.social-link a:hover {
+    text-decoration: underline;
+}
+
+#footer-deco-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+}
+
+.footer-deco {
+    height: 100px;
+    flex-shrink: 0;
+    object-fit: fill;
+    position: relative;
+}
+
+.footer-deco:not(:first-child) {
+    margin-left: -24px;
+}
+
+#footer-end {
+    align-self: center;
+}

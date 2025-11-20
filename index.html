@@ -3,26 +3,36 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Deni Dwi Arta" />
+        <meta
+            name="description"
+            content="Portfolio of Deni Dwi Arta, a product owner and UI/UX designer transitioning into a software developer. Showcasing projects and experience as a front-end developer, full-stack developer, and remote worker." />
+        <meta
+            name="keywords"
+            content="software developer portfolio, product owner, ui/ux designer, front end developer, fullstack developer, remote worker, tech blog" />
         <title>Software Developer Portfolio</title>
-        <link rel="stylesheet" href="css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-
     <body>
-        <a class="skip-link" href="#main-content">Skip to content</a>
-
-        <nav id="site-nav" role="navigation" aria-label="Main navigation">
-            <ul id="nav-list">
-                <li><a href="#section-home">Welcome</a></li>
-                <li><a href="#section-work-experience">Work Experience</a></li>
-                <li><a href="#section-projects">Projects</a></li>
-                <li><a href="#section-about-me">Personal Background</a></li>
-                <li><a href="#section-contact-me">Contact Me</a></li>
-            </ul>
+        <div class="nav-container">
+            <a class="skip-link" href="#main-content">Skip to content</a>
+            <nav id="site-nav" role="navigation" aria-label="Main navigation">
+                <ul id="nav-list">
+                    <li><a href="#section-home">Welcome</a></li>
+                    <li>
+                        <a href="#section-work-experience">Work Experience</a>
+                    </li>
+                    <li><a href="#section-projects">Projects</a></li>
+                    <li><a href="#section-about-me">Personal Background</a></li>
+                    <li><a href="#section-contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
 
             <a
                 id="download-cv-button"
@@ -31,7 +41,7 @@
                 aria-label="Download CV"
                 >Download My CV</a
             >
-        </nav>
+        </div>
 
         <main id="main-content">
             <section id="section-home" aria-labelledby="hero-title">
@@ -42,8 +52,7 @@
                         From Product Vision to Code Precision
                     </h1>
 
-                    <h4
-                        id="hero-subtitle">
+                    <h4 id="hero-subtitle">
                         Building What I Once Only Designed
                     </h4>
                 </div>
@@ -63,7 +72,9 @@
                 <div id="skillset-block"></div>
             </section>
 
-            <section id="section-work-experience" aria-labelledby="work-expereince-title">
+            <section
+                id="section-work-experience"
+                aria-labelledby="work-expereince-title">
                 <h2 id="work-expereince-title">Work Experience</h2>
                 <ul class="work-experience-stack">
                     <li class="work-experience-item">
@@ -148,7 +159,10 @@
                     <figure id="project-thumbnail">
                         <img
                             src="./assets/images/project cover.png"
-                            alt="Project Thumbnail" loading="lazy" decoding="async" />
+                            alt="Project Thumbnail"
+                            loading="lazy"
+                            decoding="async"
+                            width="200" />
                         <figcaption>Pale Blue Dot Project</figcaption>
                     </figure>
 
@@ -165,7 +179,8 @@
                         class="button btn-primary"
                         role="button"
                         aria-label="Open Pale Blue Dot UI Kit in a new tab"
-                    >Visit Project</a>
+                        >Visit Project</a
+                    >
                 </div>
             </section>
 
@@ -177,7 +192,10 @@
                             <img
                                 id="my-photo"
                                 src="./assets/images/my-photo.jpg"
-                                alt="Deni's Portrait" loading="lazy" decoding="async" width="400" height="400" />
+                                alt="Deni's Portrait"
+                                loading="lazy"
+                                decoding="async"
+                                height="200" />
                         </figure>
                     </div>
                     <div>
@@ -205,7 +223,8 @@
                                 <img
                                     class="edu-logo"
                                     src="./assets/logos/universitas-indonesia-logo.png"
-                                    alt="Logo Universitas Indonesia" />
+                                    alt="Logo Universitas Indonesia"
+                                    height="100" />
                                 <figcaption class="hidden-element">
                                     Universitas Indonesia Logo
                                 </figcaption>
@@ -213,7 +232,6 @@
                             <hgroup>
                                 <h4>Bachelor of Arts in English Literature</h4>
                                 <p>Universitas Indonesia</p>
-                                <p>2014 - 2019</p>
                             </hgroup>
                         </div>
                     </div>
@@ -230,7 +248,9 @@
                         aria-label="Contact form">
                         <fieldset>
                             <legend>
-                                <h2 id="contact-heading" class="white-text">Leave Me A Message</h2>
+                                <h2 id="contact-heading" class="white-text">
+                                    Leave Me A Message
+                                </h2>
                             </legend>
                             <div id="form-header">
                                 <div id="form-name">
@@ -272,7 +292,7 @@
                             <label for="message" class="form-label white-text"
                                 >Message:</label
                             >
-                            <p id="message-help" class="hidden-element">Maximum 400 characters.</p>
+
                             <textarea
                                 id="message"
                                 name="message"
@@ -283,6 +303,9 @@
                                 aria-label="Your Message"
                                 aria-describedby="message-help"
                                 required></textarea>
+                            <p id="message-help" class="hidden-element">
+                                Maximum 400 characters.
+                            </p>
                         </div>
                         <input
                             class="button btn-primary mt-16"
