@@ -1,3 +1,4 @@
+@import 'variables.css';
 @media screen and (min-width: 768px) {
 
     .tech-grid {
@@ -21,5 +22,28 @@
     .core-discipline-stack .card {
         flex-direction: column;
         align-items: center;
+    }
+
+    .work-history ul li {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 24px;
+        flex-wrap: nowrap;
+    }
+
+    #line {
+        display: flex;
+    }
+
+    .about-me .section-title .section-title-display {
+        color: var(--tint-purple);
+        margin-left: -32px;
+    }
+
+    .core-discipline .section-title .section-title-display {
+        margin-bottom: -32px;
     }
 }

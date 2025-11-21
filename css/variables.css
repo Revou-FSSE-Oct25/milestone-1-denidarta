@@ -16,18 +16,20 @@
 }
 
 .section-title-display {
-    font-family: var(--display-type);
+    font-family: 'Permanent Marker';
     font-size: 40px;
 }
 
 .body-medium {
     font-family: var(--primary-type);
     font-size: 24px;
+    font-weight: 200;
 }
 
 .body-large {
     font-family: var(--primary-type);
     font-size: 32px;
+    font-weight: 200;
     line-height: 1.2;
 }
 
