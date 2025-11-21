@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Deni Dwi Arta" />
+        <meta
+            name="description"
+            content="Portfolio of Deni Dwi Arta, a product owner and UI/UX designer transitioning into a software developer. Showcasing projects and experience as a front-end developer, full-stack developer, and remote worker." />
+        <meta
+            name="keywords"
+            content="software developer portfolio, product owner, ui/ux designer, front end developer, fullstack developer, remote worker, tech blog" />
+        <title>Software Developer Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="nav-container">
+            <a class="skip-link" href="#main-content">Skip to content</a>
+            <nav id="site-nav" role="navigation" aria-label="Main navigation">
+                <ul id="nav-list">
+                    <li><a href="#section-home">Welcome</a></li>
+                    <li>
+                        <a href="#section-work-experience">Work Experience</a>
+                    </li>
+                    <li><a href="#section-projects">Projects</a></li>
+                    <li><a href="#section-about-me">Personal Background</a></li>
+                    <li><a href="#section-contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
+
+            <a
+                id="download-cv-button"
+                href="assets/cv-deni-dwi-arta.pdf"
+                download
+                aria-label="Download CV"
+                >Download My CV</a
+            >
+        </div>
+
+        <main id="main-content">
+            <section id="section-home" aria-labelledby="hero-title">
+                <div id="social-block"></div>
+
+                <div id="hero-block">
+                    <h1 id="hero-title">
+                        From Product Vision to Code Precision
+                    </h1>
+
+                    <h4 id="hero-subtitle">
+                        Building What I Once Only Designed
+                    </h4>
+                </div>
+
+                <h3 id="about-me-title">About Me</h3>
+                <p id="about-me-description">
+                    By day, I’ve been the architect behind products—shaping
+                    roadmaps, designing flows, herding features like they were
+                    caffeinated cats. But somewhere along the way, I fell in
+                    love with the gears beneath the UI: the logic, the syntax,
+                    the quiet elegance of things that work because someone
+                    thought them through in code. So now, like a plot twist I
+                    probably should’ve seen coming, I’m trading my product hat
+                    for a developer’s keyboard—building not just the “what” but
+                    the “how,” one semicolon at a time.
+                </p>
+                <div id="skillset-block"></div>
+            </section>
+
+            <section
+                id="section-work-experience"
+                aria-labelledby="work-expereince-title">
+                <h2 id="work-expereince-title">Work Experience</h2>
+                <ul class="work-experience-stack">
+                    <li class="work-experience-item">
+                        <figure class="company-logo">
+                            <img
+                                src="./assets/logos/shafiq-logo.jpeg"
+                                alt="SHAFIQ Logo"
+                                loading="lazy"
+                                width="40"
+                                height="40" />
+                        </figure>
+
+                        <div class="li-body">
+                            <p class="company-name">SHAFIQ</p>
+                            <p class="job-position">Product Owner</p>
+                        </div>
+
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+
+                    <li class="work-experience-item">
+                        <figure class="company-logo">
+                            <img
+                                src="./assets/logos/fanattics-logo.jpeg"
+                                alt="Fanattics Logo"
+                                loading="lazy"
+                                width="40"
+                                height="40" />
+                        </figure>
+
+                        <div class="li-body">
+                            <p class="company-name">Fanattics Technology</p>
+                            <p class="job-position">Product Designer</p>
+                        </div>
+
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+
+                    <li class="work-experience-item">
+                        <figure class="company-logo">
+                            <img
+                                src="./assets/logos/purwadhika-logo.jpeg"
+                                alt="Purwathika Logo"
+                                loading="lazy"
+                                width="40"
+                                height="40" />
+                        </figure>
+
+                        <div class="li-body">
+                            <p class="company-name">Purwadhika</p>
+                            <p class="job-position">UI/UX Design Instructor</p>
+                        </div>
+
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+
+                    <li class="work-experience-item">
+                        <figure class="company-logo">
+                            <img
+                                src="./assets/logos/transcosmos-logo.jpeg"
+                                alt="Transcosmos Inc.Logo"
+                                loading="lazy"
+                                width="40"
+                                height="40" />
+                        </figure>
+
+                        <div class="li-body">
+                            <p class="company-name">Transcosmos Inc.</p>
+                            <p class="job-position">Design Ops</p>
+                        </div>
+
+                        <p class="work-date">May 2022 - Present</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="section-projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">Projects</h2>
+                <p>Here are some projects I have worked on:</p>
+
+                <div class="project-card">
+                    <figure id="project-thumbnail">
+                        <img
+                            src="./assets/images/project cover.png"
+                            alt="Project Thumbnail"
+                            loading="lazy"
+                            decoding="async"
+                            width="200" />
+                        <figcaption>Pale Blue Dot Project</figcaption>
+                    </figure>
+
+                    <h3>Pale Blue Dot UI Kit</h3>
+                    <p class="project-description">
+                        A React Component Library, made for a modular web
+                        application hosted on Storybook.
+                    </p>
+
+                    <a
+                        href="https://62aad36e2d62f857d675c503-eyadiccjag.chromatic.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button btn-primary"
+                        role="button"
+                        aria-label="Open Pale Blue Dot UI Kit in a new tab"
+                        >Visit Project</a
+                    >
+                </div>
+            </section>
+
+            <section id="section-about-me" aria-labelledby="about-me-heading">
+                <h2 id="about-me-heading">Personal Info</h2>
+                <div id="about-me-content">
+                    <div>
+                        <figure class="m-0">
+                            <img
+                                id="my-photo"
+                                src="./assets/images/my-photo.jpg"
+                                alt="Deni's Portrait"
+                                loading="lazy"
+                                decoding="async"
+                                height="200" />
+                        </figure>
+                    </div>
+                    <div>
+                        <p id="about-me">
+                            Hey, I’m Deni — a product owner turned aspiring
+                            software developer based in Jakarta. After years
+                            shaping tech products in the fintech and agritech
+                            space, from securities crowdfunding at SHAFIQ to
+                            supply chain platforms like Empofarm, I’m now
+                            channeling that strategic mindset into building
+                            things with code. I love designing systems that make
+                            life simpler and more secure for users, whether it’s
+                            crafting intuitive dashboards or architecting
+                            seamless financial flows. When I’m not translating
+                            business needs into product specs, you’ll probably
+                            find me tinkering with React, leveling up my UI
+                            skills, or exploring how tech can empower the
+                            underbanked. I’m driven by clarity, guided by
+                            curiosity, and always up for a challenge that blends
+                            design, logic, and impact.
+                        </p>
+                        <h3>Educational Background</h3>
+                        <div id="container-edu">
+                            <figure>
+                                <img
+                                    class="edu-logo"
+                                    src="./assets/logos/universitas-indonesia-logo.png"
+                                    alt="Logo Universitas Indonesia"
+                                    height="100" />
+                                <figcaption class="hidden-element">
+                                    Universitas Indonesia Logo
+                                </figcaption>
+                            </figure>
+                            <hgroup>
+                                <h4>Bachelor of Arts in English Literature</h4>
+                                <p>Universitas Indonesia</p>
+                            </hgroup>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section-contact-me" aria-labelledby="contact-heading">
+                <div id="form-container">
+                    <form
+                        id="contact-form"
+                        action="submit"
+                        method="POST"
+                        role="form"
+                        aria-label="Contact form">
+                        <fieldset>
+                            <legend>
+                                <h2 id="contact-heading" class="white-text">
+                                    Leave Me A Message
+                                </h2>
+                            </legend>
+                            <div id="form-header">
+                                <div id="form-name">
+                                    <label
+                                        for="name"
+                                        class="form-label white-text"
+                                        >Name:</label
+                                    >
+                                    <input
+                                        class="form-field"
+                                        aria-label="Your Name"
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        autocomplete="name"
+                                        placeholder="Put your name here..."
+                                        required />
+                                </div>
+
+                                <div id="form-email">
+                                    <label
+                                        for="email"
+                                        class="form-label white-text"
+                                        >Email:</label
+                                    >
+                                    <input
+                                        class="form-field"
+                                        aria-label="Your Email"
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        autocomplete="email"
+                                        placeholder="Put your email here..."
+                                        required />
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div id="form-message">
+                            <label for="message" class="form-label white-text"
+                                >Message:</label
+                            >
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Put your message here..."
+                                rows="4"
+                                cols="50"
+                                maxlength="400"
+                                aria-label="Your Message"
+                                aria-describedby="message-help"
+                                required></textarea>
+                            <p id="message-help" class="hidden-element">
+                                Maximum 400 characters.
+                            </p>
+                        </div>
+                        <input
+                            class="button btn-primary mt-16"
+                            aria-label="submit form"
+                            type="submit"
+                            value="Submit" />
+                        <input
+                            class="button mt-16"
+                            type="reset"
+                            value="Clear" />
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer role="contentinfo">
+            <p>Deni Dwi Arta</p>
+        </footer>
+    </body>
+</html>

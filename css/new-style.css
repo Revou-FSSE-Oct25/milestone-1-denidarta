@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stack+Sans+Text:wght@200..700&display=swap');
-
-:root {
-    --page-background: #101010;
-    --text-primary: #ffffff;
-    --text-secondary: #cccccc;
-    --tint-2: #93F4D8;
-    --tint-purple: #CD82FE;
-}
+@import 'variables.css';
 
 body {
     font-family: 'Stack Sans Text', sans-serif;
@@ -25,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(display-type);
 }
 
 .tint-2 {
@@ -203,6 +195,22 @@ main {
     margin-left: -20px;
     z-index: 2;
     color: var(--tint-purple);
+}
+
+/* ----------Work History -------- */
+.work-history {
+    display: flex;
+    flex-direction: column;
+}
+
+.work-history-stack {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 24px;
+    border-bottom: solid 1px var(--text-primary);
 }
 
 /* ----------Core Discipline-------- */
