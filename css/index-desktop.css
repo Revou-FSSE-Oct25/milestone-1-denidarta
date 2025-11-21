@@ -87,15 +87,23 @@
         flex-direction: row;
     }
 
-    .project-stack:has(.project-card.active) .project-card:not(.active) {
+    .project-stack:hover .project-card:not(:hover) {
         flex: 0.5;
+    }
+
+    .project-card {
+        transition: flex 0.5s ease;
+    }
+
+    .project-card:hover .card-image {
+        filter: saturate(100%) brightness(100%);
     }
 
     .project-title {
         transition: opacity 0.5s ease 0.3s;
     }
 
-    .project-stack:has(.project-card.active) .project-card:not(.active) .project-title {
+    .project-stack:hover .project-card:not(:hover) .project-title {
         opacity: 0;
         transition: opacity 0.2s ease;
     }
