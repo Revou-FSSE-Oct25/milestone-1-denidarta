@@ -42,6 +42,8 @@ h6 {
 
 main {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-container {
@@ -52,6 +54,11 @@ main {
     align-items: center;
     padding: 12px 8px;
     background-color: var(--text-primary);
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .hero-element-container {
@@ -59,7 +66,7 @@ main {
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 36px 16px;
+    padding: 100px 16px 16px 16px;
     overflow: hidden;
 }
 
@@ -70,9 +77,18 @@ main {
 
 .hero-title {
     font-family: 'Stack Sans Text', sans-serif;
-    font-size: 60px;
+    font-size: 5rem;
     width: 300px;
     line-height: 0.86;
+}
+
+#mono {
+    font-family: 'Courier New', Courier, monospace;
+    color: #F4511E;
+    background-color: #ffddd2;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
 }
 
 
@@ -105,11 +121,106 @@ main {
     color: var(--tint-purple)
 }
 
+.short-about-me {
+    font-size: 1.2rem;
+    line-height: 125%;
+    letter-spacing: 0%;
+    font-weight: 200;
+    margin: 0px 16px;
+}
+
+/*---------- About Me ------------*/
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    gap: 32px;
+    min-height: 50vh;
+}
+
+.about-me .section-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+}
+
+.about-me p {
+    align-self: stretch;
+    text-align: center;
+    margin-top: -32px;
+    padding: 0 16px;
+    line-height: 1.6;
+    font-size: 1.2rem;
+    font-weight: 100;
+    color: var(--text-secondary);
+}
+
+.about-me figure {
+    align-self: center;
+}
+
+#my-portrait {
+    align-self: center;
+}
+
+.about-me .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0px 16px;
+}
+
+#about-me-paragraph {
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 2;
+    text-align: left;
+    padding: 16px 16px;
+    color: var(--text-primary)
+}
+
+.about-me a {
+    margin-left: 16px;
+    font-size: 1.2rem;
+    font-weight: 100;
+    font-family: 'Stack Sans Text';
+    text-decoration: underline;
+}
+
+.about-me .section-title .stack-sans {
+    font-size: 60px;
+}
+
+.about-me .section-title .display-text {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: -20px;
+    z-index: 2;
+    color: var(--tint-purple);
+}
+
+/* ----------Core Discipline-------- */
+
+.core-discipline {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: stretch;
+    padding: 32px 16px;
+}
+
 .core-discipline .section-title {
     display: flex;
+    align-self: stretch;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 0px 16px;
+    padding: 24px 16px;
 }
 
 .core-discipline .display-text {
@@ -120,6 +231,59 @@ main {
 
 .core-discipline .stack-sans {
     font-size: 60px;
+}
+
+.core-discipline-stack {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 24px;
+}
+
+.core-discipline-stack .card {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 32px 0px;
+    border-bottom: solid 0.7px #fff;
+}
+
+.card.reverse {
+    flex-direction: row-reverse;
+}
+
+.core-discipline-stack .card .card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.core-discipline-stack .card .card-body h3 {
+    font-family: 'Stack Sans Text', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 0.9;
+}
+
+.core-discipline-stack .card .card-body p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: var(--text-secondary);
+}
+
+
+
+/*-------- Tech Stack -----------*/
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 40px 16px;
 }
 
 .tech-stack .section-title {
@@ -140,6 +304,38 @@ main {
     z-index: 1;
 }
 
+.tech-grid {
+    display: grid;
+    align-self: stretch;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1px;
+    row-gap: 1px;
+    padding: 24px 16px;
+    background-color: #101010;
+}
+
+.grid-element {
+    display: flex;
+    height: 144px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    justify-self: auto;
+    align-self: auto;
+    background-color: #1f1f1f;
+    text-align: center;
+}
+
+.grid-element p {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+
+/* ----Selected Works -----*/
+
 .selected-works {
     display: flex;
     flex-direction: column;
@@ -154,6 +350,7 @@ main {
     align-items: center;
     padding: 28px 0px;
 }
+
 
 .line-1 {
     font-family: 'Stack Sans Text', sans-serif;

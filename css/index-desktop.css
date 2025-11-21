@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px) {
+
+    .tech-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    main {
+        align-items: center;
+    }
+
+    section {
+        max-width: 1200px;
+    }
+}

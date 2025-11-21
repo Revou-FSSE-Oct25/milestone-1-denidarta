@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/new-style.css" />
+    <link rel="stylesheet" href="css/index-desktop.css" />
     <title>Developer Portfolio</title>
 </head>
 
@@ -30,6 +31,7 @@
 
     </div>
     <main>
+        <!-- Landing Section -->
         <section class="landing">
             <div class="hero-element-container">
                 <div class="hero-title-container">
@@ -39,42 +41,149 @@
                 </div>
                 <img class="hero-deco" src="assets/decorative/hero-deco.svg" alt="Hero decoration" class="hero-deco">
             </div>
-            <p>Friends and Family raising, rationalist Job-seeker LTV/CAC focused mentally exhausted startup founders.
-                Minecraft-playing Stanford Dropout. Term sheet-loving international intelligence operative. Hacker News
-                addicted Austin tech-worker.</p>
+            <p class="short-about-me">A developer focused on clear architecture, efficient problem-solving, and
+                purposeful design, delivering
+                projects built with precision, scalability, and clean implementation.</p>
             <svg class="brush"></svg>
         </section>
+
+        <!-- About Me -->
         <section class="about-me">
             <div class="section-title">
                 <h2 class="stack-sans">About</h2>
                 <h2 class="display-text">Me</h2>
             </div>
-            <div>
-                <svg id="dd-logo"></svg>
-                <p>Deni Dwi Arta or Slogan "Denidarta"</p>
+            <p>Bridging the gap between design token and code <span id="mono">variables</span></p>
+            <figure>
+                <img id="my-portrait" src="./assets/images/mockup-portrait.png" alt="portrait deni">
+            </figure>
+            <div class="text-content">
+                <p id="about-me-paragraph">Hey, I’m Deni — a product owner turned aspiring software developer based in
+                    Jakarta. After years shaping tech products in the fintech and agritech space, from securities
+                    crowdfunding at SHAFIQ to supply chain platforms like Empofarm, I’m now channeling that strategic
+                    mindset into building things with code. I love designing systems that make life simpler and more
+                    secure for users, whether it’s crafting intuitive dashboards or architecting seamless financial
+                    flows. When I’m not translating business needs into product specs, you’ll probably find me tinkering
+                    with React, leveling up my UI skills, or exploring how tech can empower the underbanked. I’m driven
+                    by clarity, guided by curiosity, and always up for a challenge that blends design, logic, and
+                    impact.
+
+                    Educational Background</p>
+                <a href="/pages/about-me.html">Know Deeper <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4H5.525a.5.5 0 0 1 0-1H12.5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0V4z" fill="#fff" />
+                        <path
+                            d="M12.146 3.146a.5.5 0 0 1 .708.708l-8.5 8.5a.5.5 0 0 1-.816-.546.501.501 0 0 1 .108-.162l8.5-8.5z"
+                            fill="#fff" />
+                    </svg>
+                </a>
             </div>
-            <div>
-                <figure><img src="" alt=""></figure>
-            </div>
+
         </section>
+
+        <!-- Core Discipline -->
         <section class="core-discipline">
             <div class="section-title">
                 <h2 class="display-text">Core</h2>
                 <h2 class="stack-sans">Discipline</h2>
             </div>
+            <ul class="core-discipline-stack">
+                <li class="card">
+                    <svg width="117" height="117" viewBox="0 0 117 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M70.611 0H46.388A7.345 7.345 0 0 0 39 7.389v24.223A7.345 7.345 0 0 0 46.389 39H70.61A7.345 7.345 0 0 0 78 31.611V7.39C78 3.273 74.633 0 70.61 0zM46.389 116.906H70.61A7.344 7.344 0 0 0 78 109.518V85.295a7.345 7.345 0 0 0-7.389-7.389H46.388A7.345 7.345 0 0 0 39 85.295v24.223c0 4.021 3.367 7.388 7.389 7.388zM78 46.295v24.223a7.345 7.345 0 0 0 7.388 7.388h24.224A7.344 7.344 0 0 0 117 70.518V46.295a7.344 7.344 0 0 0-7.388-7.389H85.388c-4.115 0-7.388 3.367-7.388 7.389zM0 46.295v24.223a7.345 7.345 0 0 0 7.389 7.388h24.223A7.345 7.345 0 0 0 39 70.518V46.295a7.345 7.345 0 0 0-7.389-7.389H7.39C3.367 38.906 0 42.273 0 46.295z"
+                            fill="#fff" />
+                    </svg>
+                    <div class="card-body">
+                        <h3>Design System</h3>
+                        <p>Mindfulness support win-win-win closer functional those or.</p>
+                    </div>
+                </li>
+                <li class="card reverse"><svg width="117" height="117" viewBox="0 0 117 117" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M58.5 18.346c22.09 0 40.154 17.97 40.154 40.154 0 22.183-17.97 40.154-40.154 40.154-22.183 0-40.154-17.97-40.154-40.154 0-22.183 17.97-40.154 40.154-40.154zM58.5 0C26.208 0 0 26.208 0 58.5S26.208 117 58.5 117 117 90.792 117 58.5 90.792 0 58.5 0z"
+                            fill="#fff" />
+                        <path
+                            d="M58.5 0C26.208 0 0 26.208 0 58.5h58.5V0zM58.5 116.906c32.292 0 58.5-26.208 58.5-58.5H58.5v58.5z"
+                            fill="#fff" />
+                    </svg>
+
+                    <div class="card-body">
+                        <h3>Software Engineering</h3>
+                        <p>Mindfulness support win-win-win closer functional those or.</p>
+                    </div>
+                </li>
+                <li class="card"><svg width="117" height="117" viewBox="0 0 117 117" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M116 1v115H1V1h115zM58.5 0v116.903M116.903 58.5H58.5M87.702 0v58.5M116.903 29.201H87.702M102.302 0v29.201M116.903 14.6h-14.601M109.603 0v14.6M116.903 7.3h-7.3"
+                            stroke="#fff" stroke-width="2" stroke-miterlimit="10" />
+                    </svg>
+                    <div class="card-body">
+                        <h3>Interface Design</h3>
+                        <p>Mindfulness support win-win-win closer functional those or.</p>
+                    </div>
+                </li>
+            </ul>
         </section>
+
+        <!-- Tech Stack -->
         <section class="tech-stack">
             <div class="section-title">
                 <h2 class="display-text">Tech</h2>
                 <h2 class="stack-sans">Stack</h2>
             </div>
+            <ul class="tech-grid">
+                <li class="grid-element">
+                    <img src="./assets/icons/software/html-css.svg" alt="html-css logo">
+                    <p>HTML + CSS</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/javascript.svg" alt="javascrip logo">
+                    <p>Javascript</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/typescript.svg" alt="Typescript logo">
+                    <p>TypeScript</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/react.svg" alt="react and react native">
+                    <p>React + RN</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/nodejs.svg" alt="node js logo">
+                    <p>NodeJs</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/postgresql.svg" alt="posgresql logo">
+                    <p>PostgreSQL</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/figma.svg" alt="figma logo">
+                    <p>Figma</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/framer.svg" alt="framer logo">
+                    <p>Framer</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/lottie.svg" alt="Lottie logo">
+                    <p>Lottie</p>
+                </li>
+                <li class="grid-element">
+                    <img src="./assets/icons/software/haiku.svg" alt="haiku logo">
+                    <p>Haiku</p>
+                </li>
+            </ul>
         </section>
+
+        <!-- Selected Works -->
         <section class="selected-works">
             <div class="section-title">
                 <h2 class="line-1">Selected</h2>
                 <h2 class="line-2">Works</h2>
             </div>
-
         </section>
     </main>
     <footer>
@@ -88,15 +197,18 @@
             </ul>
         </div>
         <ul class="social-link-container">
-            <li class="social-link"><a href="#">Github</a><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+            <li class="social-link"><a href="https://github.com/denidarta">Github</a><svg class="icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="m14 34 20-20m0 0H14m20 0v20" />
                 </svg>
             </li>
-            <li class="social-link"><a href="#">LinkedIn</a><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+            <li class="social-link"><a href="https://linkedin.com/in/denidarta">LinkedIn</a><svg class="icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="m14 34 20-20m0 0H14m20 0v20" />
                 </svg>
             </li>
-            <li class="social-link"><a href="#">Figma</a><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+            <li class="social-link"><a href="https://figma.com/@darta">Figma</a><svg class="icon-arrow"
+                    xmlns="http://www.w3.org/2000/svg">
                     <path d="m14 34 20-20m0 0H14m20 0v20" />
                 </svg>
             </li>
