@@ -41,10 +41,12 @@
                 </div>
                 <img class="hero-deco" src="assets/decorative/hero-deco.svg" alt="Hero decoration" class="hero-deco">
             </div>
-            <p class="short-about-me">A developer focused on clear architecture, efficient problem-solving, and
-                purposeful design, delivering
-                projects built with precision, scalability, and clean implementation.</p>
-            <svg class="brush"></svg>
+            <div class="short-about-me-container">
+                <img class="stamp-desktop" src="assets/decorative/stamp.svg" alt="stamp">
+                <p class="short-about-me">A developer focused on clear architecture, efficient problem-solving, and
+                    purposeful design, delivering
+                    projects built with precision, scalability, and clean implementation.</p>
+            </div>
         </section>
 
         <!-- About Me -->
@@ -243,51 +245,93 @@
                     <p class="project-title">Project Number 1</p>
                     <p class="project-year body-large">2025</p>
                 </li>
-                <li class="project-card"><img class="card-image" src="./assets/images/card-thumbnail-2.png"
+                <li class="project-card"><img class="card-image"
+                        src="https://images.unsplash.com/photo-1754481249380-3b4ada5ebc67?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="card image" />
                     <p class="project-title">Project Number 2</p>
                     <p class="project-year body-large">2024</p>
                 </li>
-                <li class="project-card"><img class="card-image" src="./assets/images/card-thumbnail-2.png"
+                <li class="project-card"><img class="card-image"
+                        src="https://images.unsplash.com/photo-1762997455163-98123f974331?q=80&w=3091&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="card image" />
                     <p class="project-title">Project Number 3</p>
                     <p class="project-year body-large">2023</p>
                 </li>
-                <li class="project-card"><img class="card-image" src="./assets/images/card-thumbnail-2.png"
+                <li class="project-card"><img class="card-image"
+                        src="https://images.unsplash.com/photo-1752061159819-f290b8f48b08?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="card image" />
                     <p class="project-title">Project Number 4</p>
                     <p class="project-year body-large">2022</p>
                 </li>
             </ul>
         </section>
+        <section id="section-contact-me" aria-labelledby="contact-heading">
+            <div id="form-container">
+                <form id="contact-form" action="submit" method="POST" role="form" aria-label="Contact form">
+                    <fieldset>
+                        <legend>
+                            <h2 id="contact-heading" class="white-text">
+                                Leave Me A Message
+                            </h2>
+                        </legend>
+                        <div id="form-header">
+                            <div id="form-name">
+                                <label for="name" class="form-label white-text">Name:</label>
+                                <input class="form-field" aria-label="Your Name" type="text" id="name" name="name"
+                                    autocomplete="name" placeholder="Put your name here..." required />
+                            </div>
+
+                            <div id="form-email">
+                                <label for="email" class="form-label white-text">Email:</label>
+                                <input class="form-field" aria-label="Your Email" type="email" id="email" name="email"
+                                    autocomplete="email" placeholder="Put your email here..." required />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div id="form-message">
+                        <label for="message" class="form-label white-text">Message:</label>
+                        <textarea id="message" name="message" placeholder="Put your message here..." rows="4" cols="50"
+                            maxlength="400" aria-label="Your Message" aria-describedby="message-help"
+                            required></textarea>
+                        <p id="message-help" class="hidden-element">
+                            Maximum 400 characters.
+                        </p>
+                    </div>
+                    <input class="button btn-primary mt-16" aria-label="submit form" type="submit" value="Submit" />
+                    <input class="button mt-16" type="reset" value="Clear" />
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="footer-menu">
-            <p class="display-text tint-2">Menu</p>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me </a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+        <div class="footer-container">
+            <div class="footer-menu">
+                <p class="display-text tint-2">Menu</p>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me </a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <ul class="social-link-container">
+                <li class="social-link"><a href="https://github.com/denidarta">Github</a><svg class="icon-arrow"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m14 34 20-20m0 0H14m20 0v20" />
+                    </svg>
+                </li>
+                <li class="social-link"><a href="https://linkedin.com/in/denidarta">LinkedIn</a><svg class="icon-arrow"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m14 34 20-20m0 0H14m20 0v20" />
+                    </svg>
+                </li>
+                <li class="social-link"><a href="https://figma.com/@darta">Figma</a><svg class="icon-arrow"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="m14 34 20-20m0 0H14m20 0v20" />
+                    </svg>
+                </li>
             </ul>
         </div>
-        <ul class="social-link-container">
-            <li class="social-link"><a href="https://github.com/denidarta">Github</a><svg class="icon-arrow"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="m14 34 20-20m0 0H14m20 0v20" />
-                </svg>
-            </li>
-            <li class="social-link"><a href="https://linkedin.com/in/denidarta">LinkedIn</a><svg class="icon-arrow"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="m14 34 20-20m0 0H14m20 0v20" />
-                </svg>
-            </li>
-            <li class="social-link"><a href="https://figma.com/@darta">Figma</a><svg class="icon-arrow"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="m14 34 20-20m0 0H14m20 0v20" />
-                </svg>
-            </li>
-        </ul>
         <div id="footer-deco-container"></div>
         <p id="footer-end">© 2025 Denidarta. All rights reserved.</p>
     </footer>
