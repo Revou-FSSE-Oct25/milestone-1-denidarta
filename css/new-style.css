@@ -5,6 +5,7 @@
     --text-primary: #ffffff;
     --text-secondary: #cccccc;
     --tint-2: #93F4D8;
+    --tint-purple: #CD82FE;
 }
 
 body {
@@ -31,12 +32,112 @@ h6 {
     color: var(--tint-2);
 }
 
+.stack-sans {
+    font-family: 'Stack Sans Text', sans-serif;
+}
+
 .display-text {
     font-family: 'Permanent Marker', cursive;
 }
 
 main {
     min-height: 100vh;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    background-color: var(--text-primary);
+}
+
+.hero-element-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 36px 16px;
+    overflow: hidden;
+}
+
+.hero-deco {
+    margin-left: -100px;
+    z-index: 1;
+}
+
+.hero-title {
+    font-family: 'Stack Sans Text', sans-serif;
+    font-size: 60px;
+    width: 300px;
+    line-height: 0.86;
+}
+
+
+
+.hero-title-container {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    gap: 16px;
+}
+
+.stamp {
+    width: 80px;
+    animation: rotation 20s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.hero-title span {
+    font-family: 'Permanent Marker', Cursive;
+    color: var(--tint-purple)
+}
+
+.core-discipline .section-title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0px 16px;
+}
+
+.core-discipline .display-text {
+    font-size: 40px;
+    margin-bottom: -25px;
+    color: #e9f508;
+}
+
+.core-discipline .stack-sans {
+    font-size: 60px;
+}
+
+.tech-stack .section-title {
+    align-items: flex-start;
+    padding: 0px 16px;
+}
+
+.tech-stack .display-text {
+    font-size: 40px;
+    margin-bottom: -25px;
+    margin-left: 8px;
+    z-index: 2;
+    color: #e9f508;
+}
+
+.tech-stack .stack-sans {
+    font-size: 60px;
+    z-index: 1;
 }
 
 .selected-works {
