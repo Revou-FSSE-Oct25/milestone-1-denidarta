@@ -162,12 +162,23 @@ main {
     color: var(--text-secondary);
 }
 
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
 .about-me figure {
     align-self: center;
 }
 
 #my-portrait {
     align-self: center;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
 }
 
 .about-me .text-content {
