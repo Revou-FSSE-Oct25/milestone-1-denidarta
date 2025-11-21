@@ -39,6 +39,35 @@ main {
     min-height: 100vh;
 }
 
+.selected-works {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0px;
+}
+
+.line-1 {
+    font-family: 'Stack Sans Text', sans-serif;
+    font-size: 60px;
+}
+
+.line-2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    margin-top: -30px;
+    color: #02b784;
+
+    transform: rotate(-5deg);
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -51,6 +80,10 @@ footer {
     flex-direction: column;
     padding: 0px 16px;
     gap: 9px;
+}
+
+.footer-menu p {
+    font-size: 20px;
 }
 
 .footer-menu ul {
@@ -76,6 +109,10 @@ footer {
 }
 
 .social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     font-size: 32px;
     line-height: 1.2;
 }
@@ -105,4 +142,18 @@ footer {
 
 #footer-end {
     align-self: center;
+}
+
+.icon-arrow {
+    width: 48px;
+    height: 48px;
+    stroke-width: 4px;
+    fill: none;
+}
+
+.icon-arrow path {
+    stroke: var(--text-primary);
+    stroke-width: 4px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
