@@ -17,11 +17,14 @@
     .core-discipline-stack {
         flex-direction: row;
         gap: 4px;
+        align-items: stretch;
+        justify-content: space-between;
     }
 
     .core-discipline-stack .card {
         flex-direction: column;
         align-items: center;
+        flex: 1;
     }
 
     .work-history ul li {
