@@ -1,4 +1,4 @@
-# Software Developer Portfolio - Module 1 Assignment
+# Software Developer Portfolio - Module 2 Assignment
 
 ## About The Project
 
@@ -6,7 +6,7 @@ This project is a personal portfolio website of a software developer. It showcas
 
 ## Link to the live demo
 
-You can view the live demo of the project [here](https://revou-fsse-oct25.github.io/milestone-1-denidarta/)
+You can view the live demo of the project [Live Demo](https://revou-fsse-oct25.github.io/milestone-1-denidarta/)
 
 ## Installation
 
@@ -30,7 +30,7 @@ The website has the following features:
 
 ## Folder Structure
 
-```
+```text
 milestone-1-denidarta
 ├───index.html
 ├───README.md
@@ -47,6 +47,7 @@ milestone-1-denidarta
 └───pages/
     ├───about-me.html
     └───projects.html
+
 ```
 
 ## Variable Management
