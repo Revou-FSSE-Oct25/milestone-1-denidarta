@@ -262,7 +262,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 
 .core-discipline .section-title {
@@ -277,19 +277,20 @@ main {
 .core-discipline-stack {
     display: flex;
     flex-direction: column;
-    padding: 0px 24px;
 }
 
 .core-discipline .section-title .section-title-display {
     color: #CAD319;
+    margin-bottom: -20px;
+    z-index: 5;
 }
 
 .core-discipline-stack .card {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 24px;
-    padding: 32px 0px;
-    border-bottom: solid 0.7px #fff;
+    padding: 32px 16px;
 }
 
 .card.reverse {
@@ -307,6 +308,7 @@ main {
     font-size: 2rem;
     font-weight: 200;
     line-height: 0.9;
+    color: var(--page-background)
 }
 
 .core-discipline-stack .card .card-body p {
@@ -314,7 +316,7 @@ main {
     font-weight: 100;
     line-height: 1.2;
     letter-spacing: normal;
-    color: var(--text-secondary);
+    color: var(--page-background)
 }
 
 
@@ -326,25 +328,18 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 40px 16px;
+    padding: 40px 0;
 }
 
 .tech-stack .section-title {
     align-items: flex-start;
-    padding: 0px 16px;
+    padding: 0px 24px;
 }
 
-.tech-stack .display-text {
-    font-size: 40px;
-    margin-bottom: -25px;
-    margin-left: 8px;
-    z-index: 2;
-    color: #e9f508;
-}
-
-.tech-stack .stack-sans {
-    font-size: 60px;
-    z-index: 1;
+.tech-stack .section-title-display {
+    color: var(--tint-yellow);
+    margin-bottom: -32px;
+    z-index: 5;
 }
 
 .tech-grid {
@@ -354,7 +349,7 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1px;
     row-gap: 1px;
-    padding: 24px 16px;
+    padding: 24px 0;
     background-color: #101010;
 }
 
@@ -393,6 +388,11 @@ main {
     padding: 28px 0px;
 }
 
+.selected-works .section-title-display {
+    margin-top: -30px;
+    color: #02b784;
+    transform: rotate(-5deg);
+}
 
 .line-1 {
     font-family: 'Stack Sans Text', sans-serif;
@@ -402,10 +402,7 @@ main {
 .line-2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 40px;
-    margin-top: -30px;
-    color: #02b784;
 
-    transform: rotate(-5deg);
 }
 
 .project-stack {
@@ -455,7 +452,20 @@ main {
     margin: 0;
     color: var(--text-primary);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 300;
+}
+
+.project-year {
+    position: absolute;
+    top: auto;
+    top: 32px;
+    right: 8px;
+    z-index: 10;
+    rotate: -90deg;
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 200;
 }
 
 /* Footer */
