@@ -47,7 +47,7 @@ main {
     padding: 12px 8px;
     background-color: var(--text-primary);
     position: fixed;
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
     box-sizing: border-box;
     overflow: hidden;
