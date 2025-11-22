@@ -47,10 +47,10 @@ main {
     padding: 12px 8px;
     background-color: var(--text-primary);
     position: fixed;
-    width: 100%;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-sizing: border-box;
-    overflow: hidden;
 }
 
 .hero-element-container {
