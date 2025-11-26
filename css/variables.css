@@ -1,59 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stack+Sans+Text:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Stack+Sans+Text:wght@200..700&display=swap");
 
 :root {
-    --page-background: #101010;
-    --text-primary: #ffffff;
-    --text-secondary: #cccccc;
-    --tint-2: #93F4D8;
-    --tint-purple: #CD82FE;
-    --tint-yellow: #CAD319;
-    --primary-type: 'Stack Sans Text', sans-serif;
-    --display-type: 'Permanent Marker';
+  --page-background: #101010;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --tint-2: #93f4d8;
+  --tint-purple: #cd82fe;
+  --tint-yellow: #cad319;
+  --primary-type: "Stack Sans Text", sans-serif;
+  --display-type: "Permanent Marker";
 }
 
 .section-title-main {
-    font-family: var(--primary-type);
-    font-size: 70px;
+  font-family: var(--primary-type);
+  font-size: 70px;
 }
 
 .section-title-display {
-    font-family: 'Permanent Marker';
-    font-size: 60px;
+  font-family: "Permanent Marker";
+  font-size: 60px;
 }
 
 .body-medium {
-    font-family: var(--primary-type);
-    font-size: 24px;
-    font-weight: 200;
+  font-family: var(--primary-type);
+  font-size: 24px;
+  font-weight: 200;
 }
 
 .body-large {
-    font-family: var(--primary-type);
-    font-size: 32px;
-    font-weight: 200;
-    line-height: 1.2;
+  font-family: var(--primary-type);
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 1.2;
 }
 
 .bg-purtple {
-    background-color: var(--tint-purple);
+  background-color: var(--tint-purple);
 }
 
 .bg-yellow {
-    background-color: #CDF493;
+  background-color: #cdf493;
 }
 
 .bg-teal {
-    background-color: var(--tint-2);
+  background-color: var(--tint-2);
 }
 
 @media screen and (min-width: 768px) {
-    .section-title-main {
-        font-family: var(--primary-type);
-        font-size: 130px;
-    }
+  .section-title-main {
+    font-family: var(--primary-type);
+    font-size: 130px;
+  }
 
-    .section-title-display {
-        font-family: var(--display-type);
-        font-size: 88px;
-    }
+  .section-title-display {
+    font-family: var(--display-type);
+    font-size: 88px;
+  }
 }
