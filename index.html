@@ -4,6 +4,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Deni Dwi Arta is a software developer based in Jakarta, specializing in front-end development, React, and building scalable web applications. Explore my portfolio and tech stack." />
+  <meta name="keywords"
+    content="software developer, front end, web developer, React, JavaScript, TypeScript, portfolio, Jakarta, Deni Dwi Arta, tech stack, UI/UX" />
+  <meta name="author" content="Deni Dwi Arta" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://revou-fsse-oct25.github.io/milestone-1-denidarta/" />
+  <meta property="og:title" content="Deni Dwi Arta - Software Developer Portfolio" />
+  <meta property="og:description"
+    content="Deni Dwi Arta is a software developer based in Jakarta, specializing in front-end development, React, and building scalable web applications." />
+  <meta property="og:image"
+    content="https://revou-fsse-oct25.github.io/milestone-1-denidarta/assets/images/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://revou-fsse-oct25.github.io/milestone-1-denidarta/" />
+  <meta property="twitter:title" content="Deni Dwi Arta - Software Developer Portfolio" />
+  <meta property="twitter:description"
+    content="Deni Dwi Arta is a software developer based in Jakarta, specializing in front-end development, React, and building scalable web applications." />
+  <meta property="twitter:image"
+    content="https://revou-fsse-oct25.github.io/milestone-1-denidarta/assets/images/og-image.jpg" />
+
+  <link rel="canonical" href="https://revou-fsse-oct25.github.io/milestone-1-denidarta/" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -11,22 +37,50 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/index.css" />
-  <title>Developer Portfolio</title>
+  <title>Deni Dwi Arta - Software Developer Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 
 <body>
-  <div class="nav-container">
-    <svg width="64" height="20" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="m24.303.502.704.012c.059.002.118.007.176.01V.501h23.802l.705.012c3.499.12 6.671 1.123 9.026 2.708 2.51 1.69 4.136 4.076 4.136 6.778s-1.627 5.088-4.136 6.777c-2.512 1.691-5.954 2.72-9.731 2.72v.002H25.183v-.023c-.29.012-.584.022-.88.022H.502V.503h23.801zM37.59 7.263c.376.862.582 1.78.582 2.737 0 .886-.176 1.737-.5 2.541h5.178c2.12 0 4.255.046 5.87-.296.804-.17 1.418-.425 1.825-.781.386-.338.619-.792.619-1.464 0-.672-.234-1.144-.627-1.502-.41-.374-1.028-.65-1.83-.844-1.611-.388-3.748-.39-5.857-.39h-5.26zm-26.673 5.278h7.251c2.12 0 4.255.046 5.871-.296.44-.093.822-.213 1.145-.36V8.056a5.616 5.616 0 0 0-1.158-.402c-1.612-.388-3.749-.39-5.858-.39h-7.251v5.277z"
-        fill="#101010" stroke="#101010" />
-    </svg>
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M4 18a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 17c0-.283.095-.52.288-.712A.97.97 0 0 1 4 16h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 18H4zm0-5a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 12c0-.283.095-.52.288-.712A.97.97 0 0 1 4 11h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 13H4zm0-5a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 7c0-.283.095-.52.288-.712A.97.97 0 0 1 4 6h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 8H4z"
-        fill="#101010" />
-    </svg>
-  </div>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo" aria-label="Home">
+        <svg width="64" height="20" viewBox="0 0 64 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <path
+            d="m24.303.502.704.012c.059.002.118.007.176.01V.501h23.802l.705.012c3.499.12 6.671 1.123 9.026 2.708 2.51 1.69 4.136 4.076 4.136 6.778s-1.627 5.088-4.136 6.777c-2.512 1.691-5.954 2.72-9.731 2.72v.002H25.183v-.023c-.29.012-.584.022-.88.022H.502V.503h23.801zM37.59 7.263c.376.862.582 1.78.582 2.737 0 .886-.176 1.737-.5 2.541h5.178c2.12 0 4.255.046 5.87-.296.804-.17 1.418-.425 1.825-.781.386-.338.619-.792.619-1.464 0-.672-.234-1.144-.627-1.502-.41-.374-1.028-.65-1.83-.844-1.611-.388-3.748-.39-5.857-.39h-5.26zm-26.673 5.278h7.251c2.12 0 4.255.046 5.871-.296.44-.093.822-.213 1.145-.36V8.056a5.616 5.616 0 0 0-1.158-.402c-1.612-.388-3.749-.39-5.858-.39h-7.251v5.277z"
+            fill="#101010" stroke="#101010" />
+        </svg>
+      </a>
+
+      <ul class="nav-links desktop-only">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+      </ul>
+
+      <button class="nav-toggle mobile-only" aria-label="Toggle navigation">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true">
+          <path
+            d="M4 18a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 17c0-.283.095-.52.288-.712A.97.97 0 0 1 4 16h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 18H4zm0-5a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 12c0-.283.095-.52.288-.712A.97.97 0 0 1 4 11h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 13H4zm0-5a.965.965 0 0 1-.712-.288A.972.972 0 0 1 3 7c0-.283.095-.52.288-.712A.97.97 0 0 1 4 6h16c.283 0 .521.096.713.288.192.192.288.43.287.712 0 .283-.097.52-.288.713A.957.957 0 0 1 20 8H4z"
+            fill="#101010" />
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu hidden">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="/pages/blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
   <main>
     <!-- Landing Section -->
     <section class="landing">
@@ -38,7 +92,7 @@
           <p>Deni Dwi Arta</p>
           <img class="stamp" src="assets/decorative/stamp.svg" alt="stamp" />
         </div>
-        <img class="hero-deco" src="assets/decorative/hero-deco.svg" alt="Hero decoration" class="hero-deco" />
+        <img class="hero-deco" src="assets/decorative/hero-deco.svg" alt="" aria-hidden="true" />
       </div>
       <div class="short-about-me-container">
         <img class="stamp-desktop" src="assets/decorative/stamp.svg" alt="stamp" />
@@ -336,18 +390,20 @@
       </div>
       <ul class="social-link-container">
         <li class="social-link">
-          <a href="https://github.com/denidarta">Github</a><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://github.com/denidarta">Github</a>
+          <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="m14 34 20-20m0 0H14m20 0v20" />
           </svg>
         </li>
         <li class="social-link">
-          <a href="https://linkedin.com/in/denidarta">LinkedIn</a><svg class="icon-arrow"
-            xmlns="http://www.w3.org/2000/svg">
+          <a href="https://linkedin.com/in/denidarta">LinkedIn</a>
+          <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="m14 34 20-20m0 0H14m20 0v20" />
           </svg>
         </li>
         <li class="social-link">
-          <a href="https://figma.com/@darta">Figma</a><svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+          <a href="https://figma.com/@darta">Figma</a>
+          <svg class="icon-arrow" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="m14 34 20-20m0 0H14m20 0v20" />
           </svg>
         </li>
@@ -359,6 +415,7 @@
 
   <script src="js/footer-deco.js"></script>
   <script src="js/project-cards.js"></script>
+  <script src="js/navbar.js"></script>
 </body>
 
 </html>
