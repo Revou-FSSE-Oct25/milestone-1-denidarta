@@ -1,4 +1,4 @@
-# Software Developer Portfolio - Module 2 Assignment
+# Software Developer Portfolio - Milestone 1
 
 > **RevoU Full Stack Software Engineering - Milestone 1**  
 > **Student:** Deni Dwi Arta  
